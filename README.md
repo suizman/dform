@@ -4,7 +4,7 @@
 More elaborated installation will be available soon, util then you can set this alias in you .bashrc|.zshrc :
 
 ```
-alias terraform="docker run -it --rm --env-file="$HOME/.secret" --volume=$PWD:/data suizman/dform:latest"
+alias terraform="docker run -it --rm --env-file=$HOME/.secret --volume=$PWD:/data suizman/dform:latest"
 ```
 
 ### Configuration:
