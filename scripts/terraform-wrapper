@@ -1,0 +1,15 @@
+#!/bin/sh
+# Exit script on command fail
+set -e
+
+# Auto export variables
+set -a
+
+# Exit if there are any parameter reference not passed as argument
+set -u
+
+# Move to terraform shared dir
+cd /data
+
+# Execute original binary terraform 
+/bin/terraform $@
